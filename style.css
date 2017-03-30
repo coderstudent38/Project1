@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+        
+html, body {
+    margin:0;
+    height:100%;
+    padding:0;
+    font-family:'Oxygen', sans-serif;
+    background-color:black;
+}
+
+.home-page {
+    background-color:black;
+}
+.intro {
+    text-align:center;
+    color:cyan;
+  font-family: 'Oxygen', sans-serif;
+  height:100%;
+  text-transform:uppercase;
+  background-color:black;
+}
+
+hgroup { 
+  position:absolute;
+  top:0%;
+  width:100%;
+  height:10vmax; 
+}
+
+hgroup h1 {
+  opacity:0; 
+  position:absolute; 
+  width:100%; 
+  margin:0;
+  font-size:8vmax; 
+  font-size:8rem;     
+  line-height:8vmax; 
+  line-height:8rem;
+}
+
+hgroup h1 span { 
+  position:relative; 
+}
+
+.start {
+  z-index: 1; 
+}
+.line-break { 
+  height: 0vmax; 
+  overflow:hidden; 
+}
+
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 30s;
+  transition-duration: 30s;
+}
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: white;
+}
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+button {
+    color:black;
+    border:none;
+    font-size:1.25vmax;
+     font-family:'Belleza', sans-serif;
+  width: 12vmax;
+  height: 2.5vmax;
+  background-color: red;
+  -webkit-animation-name: color-change; 
+  -webkit-animation-duration: 60s;
+  animation-name: color-change;
+  animation-duration: 60s;
+  animation-iteration-count:  infinite;
+}
+
+button:hover {
+    border:none;
+}
+
+@keyframes color-change {
+    0% {background-color: red;}
+    12.5% {background-color:orange;}
+    25% {background-color:yellow;}
+    37.5% {background-color:#ADFF2F;}
+    50% {background-color:green;}
+    62.5% {background-color:teal;}
+    75% {background-color:blue;}
+    87.5% {background-color:purple;}
+    100% {background-color:red;}
+    
+}
+
+.pic-table {
+    margin:0;
+    padding-top:25%;
+}
+
+#p1 {
+    background:cyan;
+    background-size:cover;
+    font-size:2.5vmax;
+    color:black;
+    height:15vmax;
+    width:15vmax;
+    margin:5%;
+    display:inline-block;
+    text-align:center;
+    margin-left:17%;
+}
+
+#p2 {
+    background:cyan;
+    background-size:cover;
+    font-size:2.5vmax;
+    color:black;
+    height:15vmax;
+    width:15vmax;
+    margin:5%;
+    display:inline-block;
+    text-align:center;
+}
+
+#p3 {
+    background:cyan;
+    background-size:cover;
+    font-size:2.5vmax;
+    color:black;
+    height:15vmax;
+    width:15vmax;
+    margin:5%;
+    display:inline-block;
+    text-align:center;
+}
+
